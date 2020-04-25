@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		FF553DE7244DE4CE0007CCF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF553DE6244DE4CE0007CCF3 /* AppDelegate.swift */; };
 		FF553DE9244DE4CE0007CCF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF553DE8244DE4CE0007CCF3 /* SceneDelegate.swift */; };
-		FF553DEB244DE4CE0007CCF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF553DEA244DE4CE0007CCF3 /* ViewController.swift */; };
 		FF553DEE244DE4CE0007CCF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF553DEC244DE4CE0007CCF3 /* Main.storyboard */; };
 		FF553DF0244DE4D30007CCF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF553DEF244DE4D30007CCF3 /* Assets.xcassets */; };
 		FF553DF3244DE4D30007CCF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF553DF1244DE4D30007CCF3 /* LaunchScreen.storyboard */; };
+		FF553DFB244DE5DD0007CCF3 /* StretchyHeaderCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF553DFA244DE5DD0007CCF3 /* StretchyHeaderCollectionViewController.swift */; };
+		FF553DFD244DE8AE0007CCF3 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF553DFC244DE8AE0007CCF3 /* HeaderCollectionReusableView.swift */; };
+		FF553DFF244DECC40007CCF3 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF553DFE244DECC40007CCF3 /* UIView+Extensions.swift */; };
+		FF553E02244DEE070007CCF3 /* StretchyHeaderFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF553E01244DEE070007CCF3 /* StretchyHeaderFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FF553DE3244DE4CE0007CCF3 /* stretchy-header.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stretchy-header.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF553DE6244DE4CE0007CCF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF553DE8244DE4CE0007CCF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FF553DEA244DE4CE0007CCF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF553DED244DE4CE0007CCF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF553DEF244DE4D30007CCF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF553DF2244DE4D30007CCF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF553DF4244DE4D30007CCF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF553DFA244DE5DD0007CCF3 /* StretchyHeaderCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderCollectionViewController.swift; sourceTree = "<group>"; };
+		FF553DFC244DE8AE0007CCF3 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		FF553DFE244DECC40007CCF3 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		FF553E01244DEE070007CCF3 /* StretchyHeaderFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +62,12 @@
 		FF553DE5244DE4CE0007CCF3 /* stretchy-header */ = {
 			isa = PBXGroup;
 			children = (
+				FF553E01244DEE070007CCF3 /* StretchyHeaderFlowLayout.swift */,
 				FF553DE6244DE4CE0007CCF3 /* AppDelegate.swift */,
 				FF553DE8244DE4CE0007CCF3 /* SceneDelegate.swift */,
-				FF553DEA244DE4CE0007CCF3 /* ViewController.swift */,
+				FF553DFC244DE8AE0007CCF3 /* HeaderCollectionReusableView.swift */,
+				FF553DFE244DECC40007CCF3 /* UIView+Extensions.swift */,
+				FF553DFA244DE5DD0007CCF3 /* StretchyHeaderCollectionViewController.swift */,
 				FF553DEC244DE4CE0007CCF3 /* Main.storyboard */,
 				FF553DEF244DE4D30007CCF3 /* Assets.xcassets */,
 				FF553DF1244DE4D30007CCF3 /* LaunchScreen.storyboard */,
@@ -138,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF553DEB244DE4CE0007CCF3 /* ViewController.swift in Sources */,
+				FF553E02244DEE070007CCF3 /* StretchyHeaderFlowLayout.swift in Sources */,
+				FF553DFF244DECC40007CCF3 /* UIView+Extensions.swift in Sources */,
+				FF553DFB244DE5DD0007CCF3 /* StretchyHeaderCollectionViewController.swift in Sources */,
 				FF553DE7244DE4CE0007CCF3 /* AppDelegate.swift in Sources */,
+				FF553DFD244DE8AE0007CCF3 /* HeaderCollectionReusableView.swift in Sources */,
 				FF553DE9244DE4CE0007CCF3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
