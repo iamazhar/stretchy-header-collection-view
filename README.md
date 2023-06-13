@@ -25,7 +25,7 @@ git clone https://github.com/iamazhar/stretchy-header-collection-view.git
 ```
 2. Open the project in Xcode and run it on a simulator or device.
 
-3. To integrate the stretchy header into your UICollectionView, refer to the example in `ViewController.swift`.
+3. To integrate the stretchy header into your UICollectionView, refer to the example in `StretchyHeaderCollectionViewController.swift`.
 
 ## Contributions
 
